@@ -1,6 +1,18 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .list {
@@ -11,12 +23,40 @@ body {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 .span {
   color: #000000;
 }
 
 /*=========HEADER==========*/
 
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header .address {
+  margin-left: auto;
+}
+
+.contact-mail-link {
+  margin-right: 50px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
 .logo {
   font-family: Raleway;
   font-style: normal;
@@ -25,6 +65,7 @@ body {
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: #2196f3;
+  margin-right: 94px;
 }
 
 .address {
@@ -37,6 +78,10 @@ body {
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .navigation-list-link:hover,
@@ -58,16 +103,13 @@ body {
   color: #757575;
 }
 /*=========END HEADER==========*/
-/*=========HERO=============*/
+/*=========main=============*/
 
 .hero-list-btn {
   text-align: center;
 }
 
-.div-modal-btn {
-  text-align: center;
-}
-.modal-btn {
+. .modal-btn {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -93,16 +135,35 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
-/*=========HERO=============*/
 
-/*=========MAIN=============*/
+.main {
+  background-color: #2f303a;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main .container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+  background-color: #2f303a;
+}
 .main-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-top: 200px;
+  padding-right: 246px;
+  padding-left: 246px;
 }
 
 .main-modal-btn {
@@ -111,11 +172,27 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  text-align: center;
   letter-spacing: 0.06em;
+  min-width: 200px;
+  height: 50px;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 11px 32px;
+  margin-bottom: 200px;
 }
 /*=========END MAIN=============*/
 /*=========FEATURES=============*/
+.features-list {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.features-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -133,6 +210,19 @@ body {
 }
 /*=========END FEATURES=============*/
 /*=========DOING=============*/
+
+.doing-list {
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.doing-title {
+  margin-bottom: 50px;
+}
+
+.doing-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 .doing-title,
 .team-title {
   font-weight: 700;
@@ -153,6 +243,33 @@ body {
   color: #212121;
 }
 
+.team{
+  background-color:#F5F4FA;
+}
+.team-title {
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+}
+.team-list-item:not(:last-child){
+  margin-right: 30px;}
+  .team-list-item{
+    margin-bottom: 94px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+  }
+  .team-name{
+    margin-top: 30px;
+  }
+  .team-job{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+}
 .team-job {
   font-weight: normal;
   font-size: 16px;
@@ -165,11 +282,30 @@ body {
 /*=========END TEAM=============*/
 
 /*=========FOOTER=============*/
+
+.footer{
+  background-color: #2F303A;
+}
+
+.footer .logo{
+  display: flex;
+  padding-top: 60px;
+  margin-bottom: 20px;
+
+}
 .contact-address-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
+  color:#FFFFFF;
 }
 
+.footer-list-link:not(:last-child){
+  margin-bottom: 9px;
+}
+ 
+.footer-list-link-last{
+padding-bottom: 60px;
+}
 /*=========END FOOTER=============*/
