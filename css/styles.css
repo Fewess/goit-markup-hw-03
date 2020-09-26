@@ -31,6 +31,9 @@ img {
   color: #000000;
 }
 
+.span-white{
+  color: #FFFFFF;
+}
 /*=========HEADER==========*/
 
 .header {
@@ -90,9 +93,15 @@ img {
 .contact-mail-link:hover,
 .contact-mail-link:focus,
 .contact-tel-link:hover,
-.contact-tel-link:focus {
+.contact-tel-link:focus
+ {
   color: #2196f3;
 }
+
+.active{
+  color: #2196f3
+}
+
 
 .contact-mail-link,
 .contact-tel-link {
@@ -140,9 +149,6 @@ img {
     .container-img{
       display: flex;
       margin-top: 34px;
-      width: 1200px;
-      padding-left: 15px;
-      padding-right: 15px;
     }
     
     .hero-list-gallery{
